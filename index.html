@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+</head>
+
+<body>
+    <style>
+        .test{
+            background-color: rgba(117, 115, 115, 0.292);
+            opacity: 1;
+            border:1px solid black;
+        }
+        .padding-10{
+            padding: 10px;
+        }
+        .margin-10{
+            margin: 10px;
+        }
+        .btn-test{
+            height: 30px;
+            width:100px;
+            background-color: aqua;
+        }
+        .btn-test:hover{
+            background-color: black;
+        }
+        .btn-test:active{
+            background-color: blue;
+        }
+        .btn-test:focus{
+            background-color: blueviolet;
+        }
+        .container{
+            padding:10px;
+        }
+        .container-form{
+            background: blue;
+        }
+        .container-form-text{
+            margin: 10px;
+        }
+        .container-form-text .txt-white{
+            color: white;
+        }
+    </style>
+    <div class=container>
+        <div class="container-form">
+            <p class="container-form-text txt-white">Hello World</p>
+        </div>
+    </div>
+    <div class="container test">
+        <div class="row">
+            <div class="col-md-6">
+                <h1>Hello world1!</h1>
+            </div>
+            <div class="col-md-6">
+                <h1>Hello world2!</h1>
+            </div>
+            <form>
+                <div class="form-group">
+                    <p id=testLabel>Test Label</p>
+                    <input type=text>
+                </div>
+                <div class="form-group">
+                    <p>Test Label 2</p>
+                    <input type=number>
+                    <button id="test-button" onclick="test2">Submit</button>
+                </div>
+                <input type=submit>
+            </form>
+        </div>
+        <div class='col-md-12'>
+            <iframe src="https://www.google.com" frameborder="0"></iframe>
+        </div>
+    </div>
+    <script>
+        
+        
+        function testFuntion(){
+            var test=''
+            let testing=''
+            test="abc"
+            testing="abc"
+        }
+        function testFunction2(){
+            test="def"
+            console.log(test)
+            console.log(testing)
+        }
+        function testFunction3(){
+            console.log(test)
+            console.log(testing)
+        }
+        testFuntion()
+        testFunction2()
+        testFunction3()
+    </script>
+    <script>
+        let temp=[]
+        temp.push(1,2,3,4,5)
+        temp.push({
+            id:1,
+            name:"John"
+        })
+        console.log(temp)
+        let tmp2=[]
+        tmp2['id']=23
+        console.log(tmp2)
+        let tmp3=[]
+    </script>
+    <script>
+        document.querySelector('#testLabel').style.color='#00000'
+    </script>
+</body>
+
+</html>
