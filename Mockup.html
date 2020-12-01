@@ -2,369 +2,378 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <style>
-    body {
-        max-width: 1112px;
-        margin: 50px auto;
-        background-color: #F5F6F7;
-    }
+  body {
+    max-width: 1112px;
+    margin: 50px auto;
+    background-color: #F5F6F7;
+  }
 </style>
 
 <body>
-    <style>
-        .width-143 {
-            width: 143px;
-        }
+  <style>
+    .width-143 {
+      width: 143px;
+    }
 
-        .flex {
-            display: flex;
-        }
+    .flex {
+      display: flex;
+    }
 
-        .content-toLeft {
-            justify-content: flex-start;
-        }
+    .content-toLeft {
+      justify-content: flex-start;
+    }
 
-        .content-toRight {
-            justify-content: flex-end;
-        }
+    .content-toRight {
+      justify-content: flex-end;
+    }
 
-        .vertical-center {
-            align-items: center;
-        }
+    .vertical-center {
+      align-items: center;
+    }
 
-        .width-640 {
-            width: 640px;
-        }
+    .width-640 {
+      width: 640px;
+    }
 
-        .width-280 {
-            width: 280px;
-        }
+    .width-280 {
+      width: 280px;
+    }
 
-        .height-403 {
-            height: 403px;
-        }
+    .height-403 {
+      height: 403px;
+    }
 
-        .card {
-            border: 5px;
-            box-shadow: 0px 3px 6px #000000;
-        }
+    .card {
+      border: 5px;
+      box-shadow: 0px 3px 6px #000000;
+    }
 
-        .width-100 {
-            width: 100%;
-        }
+    .width-100 {
+      width: 100%;
+    }
 
-        .margin-10 {
-            margin: 25px 30px;
-        }
+    .margin-10 {
+      margin: 25px 30px;
+    }
 
-        .height-118 {
-            height: 118px;
-        }
+    .height-118 {
+      height: 118px;
+    }
 
-        .img-cover {
-            object-fit: cover;
-        }
+    .img-cover {
+      object-fit: cover;
+    }
 
-        .height-50 {
-            height: 50%;
-        }
+    .height-50 {
+      height: 50%;
+    }
 
-        .margin-05 {
-            margin: 0 5%;
-        }
+    .margin-05 {
+      margin: 0 5%;
+    }
 
-        .background-grey {
-            background-color: #F5F6F7;
-        }
+    .background-grey {
+      background-color: #F5F6F7;
+    }
 
-        .background-white {
-            background-color: #ffffff;
-        }
+    .background-white {
+      background-color: #ffffff;
+    }
 
-        .width-203 {
-            width: 203px;
-        }
+    .width-203 {
+      width: 203px;
+    }
 
-        .style-purple {
-            width: 38px;
-            background-color: #7C59FF;
-            color: white;
-            transform: rotate(45deg);
-            border-radius: 10px;
-            height: 38px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
+    .style-purple {
+      width: 38px;
+      background-color: #7C59FF;
+      color: white;
+      transform: rotate(45deg);
+      border-radius: 10px;
+      height: 38px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
 
-        .style-purple-text {
-            font-size: 16px;
-            transform: rotate(-45deg);
-        }
+    .style-purple-text {
+      font-size: 16px;
+      transform: rotate(-45deg);
+    }
 
-        .margin-top-5 {
-            margin-top: 5%;
-        }
+    .margin-top-5 {
+      margin-top: 5%;
+    }
 
-        .item-margin {
-            margin: 10% 2%;
-        }
+    .item-margin {
+      margin: 10% 2%;
+    }
 
-        .right-item-margin {
-            margin: 5% 0;
-        }
+    .right-item-margin {
+      margin: 5% 0;
+    }
 
-        .margin-0 {
-            margin: 0;
-        }
+    .margin-0 {
+      margin: 0;
+    }
 
-        .margin-left-5 {
-            margin-left: 5%;
-        }
+    .margin-left-5 {
+      margin-left: 5%;
+    }
 
-        .selected-item {
-            background: #7C59FF;
-            width: 195px;
-            height: 38px;
-            border-radius: 10px;
-            color: white;
-            display: flex;
-            align-items: center;
-            padding: 5%;
-            margin: 15% 0;
-        }
+    .selected-item {
+      background: #7C59FF;
+      width: 195px;
+      height: 38px;
+      border-radius: 10px;
+      color: white;
+      display: flex;
+      align-items: center;
+      padding: 5%;
+      margin: 15% 0;
+    }
 
-        .font-openSans {
-            font-family: "Open Sans";
-            font-size: 14px;
-            font-weight: 600;
-        }
-        .font-openSans-16 {
-            font-family: "Open Sans";
-            font-size: 14px;
-            font-weight: 600;
-        }
+    .font-openSans {
+      font-family: "Open Sans";
+      font-size: 14px;
+      font-weight: 600;
+    }
 
-        .font-openSans-regular {
-            font-family: "Open Sans";
-            font-size: 14px;
-        }
+    .font-openSans-16 {
+      font-family: "Open Sans";
+      font-size: 14px;
+      font-weight: 600;
+    }
 
-        .font-openSans18 {
-            font-family: "Open Sans";
-            font-size: 18px;
-        }
+    .font-openSans-regular {
+      font-family: "Open Sans";
+      font-size: 14px;
+    }
 
-        .font-openSans18-semi {
-            font-family: "Open Sans";
-            font-size: 18px;
-            font-weight: 600;
-        }
+    .font-openSans18 {
+      font-family: "Open Sans";
+      font-size: 18px;
+    }
 
-        .font-openSans40 {
-            font-family: "Open Sans";
-            font-size: 40px;
-        }
+    .font-openSans18-semi {
+      font-family: "Open Sans";
+      font-size: 18px;
+      font-weight: 600;
+    }
 
-        .font-grey {
-            color: #8A8F9C;
-        }
+    .font-openSans40 {
+      font-family: "Open Sans";
+      font-size: 40px;
+    }
 
-        .font-avenirNext {
-            font-family: "Avenir Next";
-            font-size: 14px;
-            font-weight: 500;
-        }
+    .font-grey {
+      color: #8A8F9C;
+    }
 
-        /*toggle switch CSS*/
-        .switch {
-            position: relative;
-            display: inline-block;
-            width: 40px;
-            height: 20px;
-        }
+    .font-avenirNext {
+      font-family: "Avenir Next";
+      font-size: 14px;
+      font-weight: 500;
+    }
 
-        /* Hide default HTML checkbox */
-        .switch input {
-            opacity: 0;
-            width: 0;
-            height: 0;
-        }
+    /*toggle switch CSS*/
+    .switch {
+      position: relative;
+      display: inline-block;
+      width: 40px;
+      height: 20px;
+    }
 
-        /* The slider */
-        .slider {
-            position: absolute;
-            cursor: pointer;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-color: #EEEEEE;
-            -webkit-transition: .4s;
-            transition: .4s;
-        }
+    /* Hide default HTML checkbox */
+    .switch input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
 
-        .slider:before {
-            position: absolute;
-            content: "";
-            height: 16px;
-            width: 16px;
-            left: 2px;
-            bottom: 2px;
-            background-color: #7C59FF;
-            -webkit-transition: .4s;
-            transition: .4s;
-        }
+    /* The slider */
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #EEEEEE;
+      -webkit-transition: .4s;
+      transition: .4s;
+    }
 
-        input:checked+.slider:before {
-            -webkit-transform: translateX(20px);
-            -ms-transform: translateX(20px);
-            transform: translateX(20px);
-        }
+    .slider:before {
+      position: absolute;
+      content: "";
+      height: 16px;
+      width: 16px;
+      left: 2px;
+      bottom: 2px;
+      background-color: #7C59FF;
+      -webkit-transition: .4s;
+      transition: .4s;
+    }
 
-        /* Rounded sliders */
-        .slider.round {
-            border-radius: 34px;
-        }
+    input:checked+.slider:before {
+      -webkit-transform: translateX(20px);
+      -ms-transform: translateX(20px);
+      transform: translateX(20px);
+    }
 
-        .slider.round:before {
-            border-radius: 50%;
-        }
+    /* Rounded sliders */
+    .slider.round {
+      border-radius: 34px;
+    }
 
-        .div-bottom {
-            position: absolute;
-            bottom: 0;
-        }
+    .slider.round:before {
+      border-radius: 50%;
+    }
 
-        .align-item {
-            display: flex;
-            align-items: center;
-        }
+    .div-bottom {
+      position: absolute;
+      bottom: 0;
+    }
 
-        .font-purple {
-            color: #7C60FF;
-        }
+    .align-item {
+      display: flex;
+      align-items: center;
+    }
 
-        .font-green {
-            color: #42B72A;
-        }
+    .font-purple {
+      color: #7C60FF;
+    }
 
-        button {
-            margin: 0 5%;
-            background: white;
-            box-shadow: 0px 3px 6px grey;
-            border: 0;
-            border-radius: 5px;
-            width: 42px;
-            height: 42px;
-        }
-        .opacity-half{
-            opacity: 0.5;
-        }
-    </style>
+    .font-green {
+      color: #42B72A;
+    }
+
+    button {
+      margin: 0 5%;
+      background: white;
+      box-shadow: 0px 3px 6px grey;
+      border: 0;
+      border-radius: 5px;
+      width: 42px;
+      height: 42px;
+    }
+
+    .opacity-half {
+      opacity: 0.5;
+    }
+
+    .min-h-45{
+      min-height: 45rem;
+    }
+  </style>
+  <div class="container">
     <div class="row top flex">
-        <div class="col-md-6 content-toLeft">
-            <img class="width-143 opacity-half" src="nomadrental.png">
-        </div>
-        <div class="col-md-6 content-toRight flex vertical-center">
-            <p class="font-openSans font-grey">Choose a city</p>
-            <button class="font-grey"><i class="fa fa-navicon"></i></button>
-        </div>
+      <div class="col-xs-9 col-md-6 content-toLeft">
+        <img class="width-143 opacity-half" src="nomadrental.png">
+      </div>
+      <div class="col-xs-9 col-md-6 content-toRight flex vertical-center">
+        <p class="font-openSans font-grey">Choose a city</p>
+        <button class="font-grey"><i class="fa fa-navicon"></i></button>
+      </div>
     </div>
-    <div class="row flex">
-        <div class="col-md-3 margin-top-5">
-            <div class="style-purple">
-                <p class="style-purple-text font-openSans-16" style="margin: 0; width: fit-content;">JD</p>
-            </div>
-            <div class="item-margin">
-                <p class="margin-0 font-openSans">John Doe</p>
-                <p class="margin-0 font-grey font-avenirNext">Premium Nomad</p>
-            </div>
-            <div class="item-margin">
-                <div class="selected-item">
-                    <p class="margin-0 width-100 font-openSans"><i class='fas fa-inbox margin-05'></i>Bookings</p>
-                </div>
-                <p class="margin-left-5 width-100 font-openSans font-grey"><i class="fas fa-bed margin-05"></i>Refer and
-                    Earn</p>
-                <p class="margin-left-5 width-100 font-openSans font-grey"><i
-                        class="material-icons margin-05">account_circle</i>Account Settings</p>
-            </div>
-            <div class="item-margin">
-                <p class="font-openSans font-grey">Support</p>
-                <p class="margin-left-5 width-100 font-openSans font-grey"><i class='fas fa-globe margin-05'></i>Contact
-                    Us</p>
-                <p class="margin-left-5 width-100 font-openSans font-grey"><i
-                        class='fas fa-external-link-alt margin-05'></i>FAQ</p>
-            </div>
-            <div class="flex div-bottom">
-                <label class="switch">
-                    <input type="checkbox">
-                    <span class="slider round"></span>
-                </label>
-                <p class="font-openSans font-grey">Sign out</p>
-            </div>
+  </div>
+  <div class="container">
+    <div style="flex-wrap: wrap;" class="row flex">
+      <div class="col-md-3 margin-top-5 min-h-45">
+        <div class="style-purple">
+          <p class="style-purple-text font-openSans-16" style="margin: 0; width: fit-content;">JD</p>
         </div>
-        <div class="col-md-9 width-640">
-            <p class="font-openSans40 right-item-margin">Bookings</p>
-            <p class="font-openSans18 right-item-margin">Your current upcoming stays</p>
-            <p class="font-openSans-regular right-item-margin">Please update with the properity if your travel plans
-                should change or if you wishto make any changes to
-                your stay.</p>
-            <div class="right-item-margin">
-                <a class="font-openSans-14 align-item"><i class="material-icons">keyboard_arrow_right</i>Learn more
-                    about our premium subscription.</a>
-            </div>
-            <div class="row flex card">
-                <div>
-                    <img class="width-280 height-403 center img-cover" src="sample.png">
-                </div>
-                <div class="width-100 background-white">
-                    <div class="margin-10">
-                        <p class="font-openSans18-semi">The Green View</p>
-                        <p class="font-openSans14 font-grey"><i class='fas fa-check-circle margin-05'></i>Booking
-                            request received</p>
-                        <p class="font-openSans14 font-purple"><i class='fas fa-clock margin-05'></i>Awaiting
-                            confirmation from Hotel</p>
-                    </div>
-                    <hr>
-                    <div class="margin-10">
-                        <p class="font-openSans18-semi">Superior Premium</p>
-                        <div class="row flex font-openSans14">
-                            <div class="col-md-6 flex">
-                                <i class='far fa-calendar-check  margin-05 font-grey'></i>
-                                <div>
-                                    <p class="font-grey font-openSans-regular">Check-in:</p>
-                                    <p class="font-openSans">July 9th, 2018</p>
-                                </div>
-                            </div>
-                            <div class="col-md-6 flex">
-                                <i class="fal fa-receipt margin-05 font-grey"></i>
-                                <div>
-                                    <p class="font-grey font-openSans-regular">Reference</p>
-                                    <p class="font-openSans">#UC311K</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="height-118 background-grey">
-                        <div class="height-50 align-item" style="border-bottom: 1px inset rgba(0, 0, 0, 0.156);">
-                            <p class="font-green width-100 font-openSans" style="padding-left: 5%;"><i
-                                    class="fas fa-star margin-05"></i>Rate your stay</p>
-                        </div>
-                        <div class="height-50 align-item">
-                            <p class="font-grey width-100 font-openSans" style="padding-left: 5%;"><i
-                                    class="fa fa-send margin-05"></i>Email the property</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="item-margin">
+          <p class="margin-0 font-openSans">John Doe</p>
+          <p class="margin-0 font-grey font-avenirNext">Premium Nomad</p>
         </div>
+        <div class="item-margin">
+          <div class="selected-item">
+            <p class="margin-0 width-100 font-openSans"><i class='fas fa-inbox margin-05'></i>Bookings</p>
+          </div>
+          <p class="margin-left-5 width-100 font-openSans font-grey"><i class="fas fa-bed margin-05"></i>Refer and
+            Earn</p>
+          <p class="margin-left-5 width-100 font-openSans font-grey"><i
+              class="material-icons margin-05">account_circle</i>Account Settings</p>
+        </div>
+        <div class="item-margin">
+          <p class="font-openSans font-grey">Support</p>
+          <p class="margin-left-5 width-100 font-openSans font-grey"><i class='fas fa-globe margin-05'></i>Contact
+            Us</p>
+          <p class="margin-left-5 width-100 font-openSans font-grey"><i class='fas fa-external-link-alt margin-05'></i>FAQ
+          </p>
+        </div>
+        <div class="flex div-bottom">
+          <label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+          </label>
+          <p class="font-openSans font-grey">Sign out</p>
+        </div>
+      </div>
+      <div class="col-md-9 width-640">
+        <p class="font-openSans40 right-item-margin">Bookings</p>
+        <p class="font-openSans18 right-item-margin">Your current upcoming stays</p>
+        <p class="font-openSans-regular right-item-margin">Please update with the properity if your travel plans
+          should change or if you wishto make any changes to
+          your stay.</p>
+        <div class="right-item-margin">
+          <a class="font-openSans-14 align-item"><i class="material-icons">keyboard_arrow_right</i>Learn more
+            about our premium subscription.</a>
+        </div>
+        <div class="row flex card">
+          <div>
+            <img class="width-280 height-403 center img-cover" src="sample.png">
+          </div>
+          <div class="width-100 background-white">
+            <div class="margin-10">
+              <p class="font-openSans18-semi">The Green View</p>
+              <p class="font-openSans14 font-grey"><i class='fas fa-check-circle margin-05'></i>Booking
+                request received</p>
+              <p class="font-openSans14 font-purple"><i class='fas fa-clock margin-05'></i>Awaiting
+                confirmation from Hotel</p>
+            </div>
+            <hr>
+            <div class="margin-10">
+              <p class="font-openSans18-semi">Superior Premium</p>
+              <div class="row flex font-openSans14">
+                <div class="col-md-6 flex">
+                  <i class='far fa-calendar-check  margin-05 font-grey'></i>
+                  <div>
+                    <p class="font-grey font-openSans-regular">Check-in:</p>
+                    <p class="font-openSans">July 9th, 2018</p>
+                  </div>
+                </div>
+                <div class="col-md-6 flex">
+                  <i class="fal fa-receipt margin-05 font-grey"></i>
+                  <div>
+                    <p class="font-grey font-openSans-regular">Reference</p>
+                    <p class="font-openSans">#UC311K</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="height-118 background-grey">
+              <div class="height-50 align-item" style="border-bottom: 1px inset rgba(0, 0, 0, 0.156);">
+                <p class="font-green width-100 font-openSans" style="padding-left: 5%;"><i
+                    class="fas fa-star margin-05"></i>Rate your stay</p>
+              </div>
+              <div class="height-50 align-item">
+                <p class="font-grey width-100 font-openSans" style="padding-left: 5%;"><i
+                    class="fa fa-send margin-05"></i>Email the property</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 </body>
-
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
 </html>

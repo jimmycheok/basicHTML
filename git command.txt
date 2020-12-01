@@ -1,0 +1,9 @@
+git init
+git remote add origin https://git.hub.xxxxx
+git add .
+git commit -m "[feat/fix/imp] message"
+git checkout -b $beach_name
+git fetch
+git reset --hard origin/master
+git pull origin master
+git rebase origin/master
