@@ -1,0 +1,263 @@
+.width-143 {
+  width: 143px;
+}
+
+.flex {
+  display: flex;
+}
+
+.content-toLeft {
+  justify-content: flex-start;
+}
+
+.content-toRight {
+  justify-content: flex-end;
+}
+
+.vertical-center {
+  align-items: center;
+}
+
+.width-640 {
+  width: 640px;
+}
+
+.width-280 {
+  width: 280px;
+}
+
+.height-403 {
+  height: 403px;
+}
+
+.card {
+  border: 5px;
+  box-shadow: 0px 3px 6px #000000;
+}
+
+.width-100 {
+  width: 100%;
+}
+
+.margin-10 {
+  margin: 25px 30px;
+}
+
+.height-118 {
+  height: 118px;
+}
+
+.img-cover {
+  object-fit: cover;
+}
+
+.height-50 {
+  height: 50%;
+}
+
+.margin-05 {
+  margin: 0 5%;
+}
+
+.background-grey {
+  background-color: #F5F6F7;
+}
+
+.background-white {
+  background-color: #ffffff;
+}
+
+.width-203 {
+  width: 203px;
+}
+
+.style-purple {
+  width: 38px;
+  background-color: #7C59FF;
+  color: white;
+  transform: rotate(45deg);
+  border-radius: 10px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.style-purple-text {
+  font-size: 16px;
+  transform: rotate(-45deg);
+}
+
+.margin-top-5 {
+  margin-top: 5%;
+}
+
+.item-margin {
+  margin: 10% 2%;
+}
+
+.right-item-margin {
+  margin: 5% 0;
+}
+
+.margin-0 {
+  margin: 0;
+}
+
+.margin-left-5 {
+  margin-left: 5%;
+}
+
+.selected-item {
+  background: #7C59FF;
+  width: 195px;
+  height: 38px;
+  border-radius: 10px;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 5%;
+  margin: 15% 0;
+}
+
+.font-openSans {
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.font-openSans-16 {
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.font-openSans-regular {
+  font-family: "Open Sans";
+  font-size: 14px;
+}
+
+.font-openSans18 {
+  font-family: "Open Sans";
+  font-size: 18px;
+}
+
+.font-openSans18-semi {
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.font-openSans40 {
+  font-family: "Open Sans";
+  font-size: 40px;
+}
+
+.font-grey {
+  color: #8A8F9C;
+}
+
+.font-avenirNext {
+  font-family: "Avenir Next";
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/*toggle switch CSS*/
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #EEEEEE;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 2px;
+  bottom: 2px;
+  background-color: #7C59FF;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(20px);
+  -ms-transform: translateX(20px);
+  transform: translateX(20px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.div-bottom {
+  position: absolute;
+  bottom: 0;
+}
+
+.align-item {
+  display: flex;
+  align-items: center;
+}
+
+.font-purple {
+  color: #7C60FF;
+}
+
+.font-green {
+  color: #42B72A;
+}
+
+button {
+  margin: 0 5%;
+  background: white;
+  box-shadow: 0px 3px 6px grey;
+  border: 0;
+  border-radius: 5px;
+  width: 42px;
+  height: 42px;
+}
+
+.opacity-half {
+  opacity: 0.5;
+}
+
+.min-h-45 {
+  min-height: 45rem;
+}
+
+body {
+  max-width: 1112px;
+  margin: 50px auto;
+  background-color: #F5F6F7;
+}
+
+/*# sourceMappingURL=Mockup.css.map */
